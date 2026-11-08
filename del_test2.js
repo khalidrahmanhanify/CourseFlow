@@ -1,0 +1,1 @@
+const Database = require('better-sqlite3'); const db = new Database('C:/Users/LENOVO/AppData/Roaming/local-course-learning/learn.db'); const res = db.prepare(DELETE FROM lectures WHERE id LIKE 'test-progress-%').run(); console.log(res.changes); db.close();

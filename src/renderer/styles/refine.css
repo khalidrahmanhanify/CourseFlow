@@ -1,0 +1,277 @@
+/* ==========================================================================
+   Readability refinements
+   Loaded last so these upgrades apply on top of the component styles.
+   ========================================================================== */
+
+body {
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Page chrome ------------------------------------------------------------- */
+
+.page-subtitle {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+}
+
+.link-btn {
+  font-size: 12px;
+}
+
+/* Sidebar ---------------------------------------------------------------- */
+
+.nav-item {
+  font-size: 13.5px;
+  font-weight: 550;
+}
+
+.brand-text strong {
+  font-size: 15px;
+}
+
+.brand-text span {
+  font-size: 11px;
+}
+
+.sidebar-label {
+  font-size: 10.5px;
+}
+
+.library-count {
+  font-size: 12px;
+}
+
+.library-percent {
+  font-size: 11.5px;
+}
+
+.library-sub {
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+
+/* Dashboard -------------------------------------------------------------- */
+
+.hero-lecture {
+  font-size: 14px;
+}
+
+.hero-lecture-note {
+  font-size: 12.5px;
+}
+
+.course-card-body h3 {
+  font-size: 14.5px;
+}
+
+.course-card-meta {
+  font-size: 11.5px;
+}
+
+.cover-tag {
+  font-size: 10.5px;
+}
+
+.recent-main strong {
+  font-size: 13.5px;
+}
+
+.recent-main span,
+.recent-time {
+  font-size: 11.5px;
+}
+
+.review-banner-text span {
+  font-size: 12px;
+}
+
+.stat-card span {
+  font-size: 11.5px;
+}
+
+/* Course view ------------------------------------------------------------ */
+
+.course-path {
+  font-size: 12px;
+}
+
+.lecture-title-row h4 {
+  font-size: 13.5px;
+  line-height: 1.35;
+}
+
+.lecture-sub {
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+
+.section-heading-text strong {
+  font-size: 13.5px;
+}
+
+.section-heading-text span {
+  font-size: 11.5px;
+}
+
+.section-progress-value {
+  font-size: 11.5px;
+}
+
+/* Player ----------------------------------------------------------------- */
+
+.player-breadcrumb {
+  font-size: 12px;
+}
+
+.player-index {
+  font-size: 11.5px;
+}
+
+.tab-btn {
+  font-size: 12.5px;
+}
+
+.nav-btn-text > span {
+  font-size: 10px;
+}
+
+.nav-btn-text strong {
+  font-size: 12px;
+}
+
+.player-strip-progress span {
+  font-size: 11px;
+}
+
+.playlist-title strong {
+  font-size: 12.5px;
+}
+
+.playlist-count {
+  font-size: 10.5px;
+}
+
+.playlist-progress span {
+  font-size: 10.5px;
+}
+
+.playlist-section-head {
+  font-size: 11px;
+}
+
+.playlist-section-meta {
+  font-size: 10px;
+}
+
+.playlist-item-title {
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+
+.playlist-item-meta {
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+.note-card p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.composer-hint {
+  font-size: 10.5px;
+}
+
+.resource-main strong,
+.subtitle-main strong {
+  font-size: 12.5px;
+}
+
+.resource-main span,
+.subtitle-main span {
+  font-size: 10.5px;
+}
+
+.tab-empty p {
+  font-size: 12px;
+}
+
+/* Settings --------------------------------------------------------------- */
+
+.settings-card-header p {
+  font-size: 12px;
+}
+
+.theme-option-text strong {
+  font-size: 12.5px;
+}
+
+.theme-option-text span {
+  font-size: 10.5px;
+}
+
+.setting-copy strong {
+  font-size: 13px;
+}
+
+.setting-copy p {
+  font-size: 12px;
+}
+
+.about-grid span {
+  font-size: 10px;
+}
+
+.about-grid strong {
+  font-size: 12.5px;
+}
+
+/* Shared primitives ------------------------------------------------------ */
+
+.chip {
+  font-size: 12px;
+}
+
+.chip.tiny {
+  font-size: 10.5px;
+}
+
+.btn {
+  font-size: 13.5px;
+}
+
+.btn-sm {
+  font-size: 12.5px;
+}
+
+.btn-xs {
+  font-size: 11.5px;
+}
+
+.completion-summary { display: grid; gap: 16px; }
+.completion-hero { text-align: center; color: var(--text); }
+.completion-hero svg { margin: 0 auto 8px; color: var(--success); }
+.completion-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; }
+.completion-stats div { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 10px; text-align: center; }
+.completion-stats span { display: block; font-size: 10.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.completion-stats strong { display: block; margin-top: 4px; font-size: 15px; }
+
+.subtitle-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 0 2px 12px; }
+.subtitle-hint { font-size: 10.5px; color: var(--muted); }

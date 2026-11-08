@@ -1,0 +1,29 @@
+/* Fullscreen consistency fixes */
+.video-frame:fullscreen,
+.video-frame:-webkit-full-screen {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-frame:fullscreen .video-el,
+.video-frame:-webkit-full-screen .video-el {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-frame:fullscreen .video-controls,
+.video-frame:-webkit-full-screen .video-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+
+/* Prevent white flashes */
+.video-frame:fullscreen,
+.video-frame:-webkit-full-screen {
+  color-scheme: dark;
+}

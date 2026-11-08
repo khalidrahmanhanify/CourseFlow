@@ -1,0 +1,409 @@
+/* ==========================================================================
+   Responsive behaviour
+   ========================================================================== */
+
+@media (max-width: 1500px) {
+  .player-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .page {
+    padding: 26px 26px 56px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero-card {
+    padding: 28px 30px;
+  }
+
+  .course-hero {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .sidebar {
+    flex-basis: var(--sidebar-collapsed);
+    width: var(--sidebar-collapsed);
+    padding: 0 10px 14px;
+  }
+
+  .sidebar .brand-text,
+  .sidebar .sidebar-label,
+  .sidebar .nav-label,
+  .sidebar .nav-badge,
+  .sidebar .sidebar-library,
+  .sidebar .sidebar-spacer {
+    display: none;
+  }
+
+  .sidebar .sidebar-brand {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .sidebar .sidebar-collapse {
+    display: none;
+  }
+
+  .sidebar .sidebar-nav {
+    margin-top: 8px;
+  }
+
+  .sidebar .nav-item {
+    justify-content: center;
+    padding: 0;
+    height: 42px;
+  }
+
+  .sidebar .nav-item.active::before {
+    left: -10px;
+  }
+
+  .sidebar .sidebar-import {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .player-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .playlist-panel {
+    position: static;
+    max-height: 420px;
+    margin-top: 4px;
+  }
+
+  .playlist-scroll {
+    max-height: 300px;
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(auto-fill, minmax(238px, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .page {
+    padding: 22px 20px 50px;
+  }
+
+  .view-player .page {
+    padding: 16px 18px 40px;
+  }
+
+  .hero-card {
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .hero-visual {
+    padding-right: 0;
+  }
+
+  .search-trigger {
+    width: min(280px, 30vw);
+  }
+
+  .course-hero-ring {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .course-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .section-progress .progress-track {
+    width: 60px;
+  }
+
+  .player-strip {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .player-strip-progress {
+    display: none;
+  }
+
+  .theme-options {
+    grid-template-columns: 1fr;
+  }
+
+  .review-card {
+    flex-wrap: wrap;
+  }
+
+  .review-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 18px 16px 44px;
+  }
+
+  .page-top {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .page-actions {
+    padding-top: 0;
+  }
+
+  .content-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .toolbar-meta {
+    justify-content: space-between;
+  }
+
+  .search-trigger {
+    width: 36px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .search-trigger-text,
+  .search-trigger kbd {
+    display: none;
+  }
+
+  .titlebar {
+    gap: 10px;
+    padding-left: 12px;
+  }
+
+  .titlebar-crumb.subtle,
+  .titlebar-sep {
+    display: none;
+  }
+
+  .titlebar-crumb {
+    max-width: 180px;
+  }
+
+  .player-breadcrumb {
+    display: none;
+  }
+
+  .player-headline {
+    flex-direction: column;
+    gap: 11px;
+  }
+
+  .player-headline-actions {
+    width: 100%;
+  }
+
+  .player-headline-actions .btn {
+    flex: 1;
+  }
+
+  .player-topbar {
+    justify-content: space-between;
+  }
+
+  .player-index {
+    display: none;
+  }
+
+  .player-tabs {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .player-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tab-btn.ghost {
+    display: none;
+  }
+
+  .tab-panel {
+    padding: 12px;
+  }
+
+  .composer-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .moment-composer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .video-frame {
+    border-radius: var(--radius-md);
+  }
+
+  .ended-card {
+    padding: 18px;
+  }
+
+  .ended-actions {
+    flex-direction: column;
+  }
+
+  .review-meta > span:nth-child(n + 3) {
+    display: none;
+  }
+
+  .storage-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .setting-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .segmented {
+    align-self: flex-start;
+  }
+
+  .shortcut-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal,
+  .palette {
+    border-radius: 13px;
+  }
+
+  .palette-overlay {
+    padding: 8vh 12px 12px;
+  }
+
+  .toast-stack {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    max-width: none;
+  }
+
+  .hero-card {
+    padding: 20px;
+    min-height: 0;
+  }
+
+  .course-hero {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .course-hero-cover {
+    flex-basis: 84px;
+    height: 84px;
+  }
+
+  .course-hero-cover span {
+    font-size: 28px;
+  }
+
+  .course-hero-content {
+    flex-basis: calc(100% - 100px);
+  }
+
+  .review-summary {
+    align-self: flex-start;
+  }
+
+  .lecture-actions {
+    opacity: 1;
+  }
+
+  .section-actions {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .window-btn {
+    width: 34px;
+  }
+
+  .titlebar-btn {
+    display: none;
+  }
+
+  .player-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .player-nav-btn.align-right {
+    justify-content: flex-start;
+    text-align: left;
+    flex-direction: row-reverse;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shortcut-grid {
+    gap: 2px;
+  }
+}
+
+@media (max-height: 700px) {
+  .hero-card {
+    min-height: 190px;
+    padding: 22px 26px;
+  }
+
+  .playlist-panel {
+    max-height: calc(100vh - 110px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
